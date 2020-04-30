@@ -13,15 +13,15 @@
 
   <div class="mb-6">
     <%= form.label :title, class: "label" %>
-    <%= form.text_field :title, class: "input" %>
+    <%= form.text_field :title, class: "form-control" %>
   </div>
 
   <div class="mb-6">
     <%= form.label :body, class: "label" %>
-    <%= form.text_area :body, class: "input h-64"  %>
+    <%= form.text_area :body, class: "form-control my-2"  %>
   </div>
 
-  <div class="actions">
-    <%= form.submit class: "btn btn-default"%>
+  <div class="actions mb-6">
+    <%= form.submit class: "btn btn-light mr-3"%>
   </div>
 <% end %>

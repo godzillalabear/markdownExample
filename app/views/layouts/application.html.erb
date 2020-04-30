@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MarkdownExample</title>
+    <title>Blog with Markdown</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,23 @@
   </head>
 
   <body>
-    <%= yield %>
+    <!-- Image and text -->
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="/docs/4.4/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        Blog with Markdown
+      </a>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+          
+        </div>
+        <div class="col-8">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+    
   </body>
 </html>

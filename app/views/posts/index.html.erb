@@ -5,8 +5,8 @@
 <table>
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Body</th>
+      <!-- <th>Title</th>
+      <th>Body</th> -->
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,9 +16,9 @@
      
         <h3 class="text-xl font-bold"> <%= post.title%></h3>
         <%= markdown(post.body) %>
-        <%= link_to 'Show ', post %>
-        <%= link_to 'Edit ', edit_post_path(post) %>
-        <%= link_to 'Destroy ', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <%= link_to 'Show ', post , class: "btn btn-light mr-3"%>
+        <%= link_to 'Edit ', edit_post_path(post) , class: "btn btn-light mr-3"%>
+        <%= link_to 'Destroy ', post, method: :delete, data: { confirm: 'Are you sure?' } , class: "btn btn-light mr-3"%>
       
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Post', new_post_path %>
+<%= link_to 'New Post', new_post_path , class: "btn btn-light mr-3"%>
